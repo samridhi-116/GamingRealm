@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaming Realm</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="Project.js"></script>
+  <link rel="shortcut icon" type="image/jpg" href="imgs/logo.png" />
+
+  <link rel="stylesheet" href="Project.css" />
+  <link rel="stylesheet" href="chat.css" />
+</head>
+
+<body>
+  <!--div-1(Title bar)-->
+  <div id="maindiv" class="main row">
+    <div class="title col">
+      <img src="imgs\logo.png" id="logo" />
+      <!--title bar icons-->
+      <div class="name col" id="clean">
+        <div class="group">
+          <img src="imgs\open.png" class="icon" />
+          <img src="imgs\open1.png" class="iconHover" />
+        </div>
+        <div class="hide">Menu</div>
+      </div>
+      <div class="name col" id="clean1">
+        <div class="group">
+          <img src="imgs\bookmark.png" class="icon" />
+          <img src="imgs\Untitled design (7).png" class="iconHover" />
+        </div>
+        <div class="hide">Saved</div>
+      </div>
+      <div class="name col" id="clean2">
+        <div class="group">
+          <img src="imgs\Untitled design.png" class="icon" />
+          <img src="imgs\Untitled design (6).png" class="iconHover" />
+        </div>
+        <div class="hide">Chat</div>
+      </div>
+      <div class="name col" id="clean3">
+        <div class="group">
+          <img src="imgs\Untitled design (1).png" class="icon" />
+          <img src="imgs\Untitled design (3).png" class="iconHover" />
+        </div>
+        <div class="hide">Profile</div>
+      </div>
+      <div class="name col" id="clean4">
+        <div class="group">
+          <img src="imgs\setting.png" class="icon" />
+          <img src="imgs\setting1.png" class="iconHover" />
+        </div>
+        <div class="hide">Setting</div>
+      </div>
+    </div>
+    <!--Div-2 (main) -->
+    <div class="mainCont col">
+      <div class="cont" id="prePhase">
+        <!--User name and stuff-->
+        <div class="mob row">
+          <div id="user">Hi Guest</div>
+          <div class="line row">
+            <img src="imgs\Untitled design (5).png" id="on1" class="on" />
+            <img src="imgs\Untitled design (4).png" id="on2" class="on" />
+            <img src="avatar\batman_hero_avatar_comics-512.webp" id="on3" class="on" />
+          </div>
+        </div>
+        <div id="led">Welcome back, many games waiting to be played</div>
+        <!--User Avatar div-->
+
+        <!--Slideshow of upcoming projects-->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="imgs\jnghfc.png" id="i" />
+            <div class="text">Coming Soon</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="imgs\H2x1_WiiUDS_HollowKnight_image1600w.jpg" id="i" />
+            <div class="text">Coming Soon</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="imgs\cover-1608107647188.jpeg" id="i" />
+            <div class="text">Coming Soon</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="imgs\header.jpg" id="i" />
+            <div class="text">Coming Soon</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="imgs\590x300.png" id="i" />
+            <div class="text">Coming Soon</div>
+          </div>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <!--history-->
+        <div class="col">
+          <div class="heading row">
+            <div class="txt">Recently Played</div>
+            <div class="arrow row">
+              <a href="#" class="previous round">&lsaquo;</a>
+              <a href="#" class="next round">&rsaquo;</a>
+            </div>
+          </div>
+          <div id="history" class="row">
+          </div>
+        </div>
+
+        <!--Games-->
+        <div class="games col">
+          <div class="heading row">
+            <div class="txt" style="margin-right: 45.9vw">Games</div>
+            <div class="arrow row">
+              <a href="#" class="previous round" id="gamePrev">&lsaquo;</a>
+              <a href="#" class="next round" id="gameNxt">&rsaquo;</a>
+            </div>
+          </div>
+          <!--always on display-->
+          <div class="play row" id="show1">
+            <div class="go" id="dino">
+              <img src="imgs\41def14aa0d96d14f8f70608394fa6aa_large.0.jpeg" id="wall" />
+              <div id="pen">Dino Run</div>
+            </div>
+            <div class="go" id="dice">
+              <img src="imgs\ROLL-THE-DICE.jpg" id="wall" />
+              <div id="pen">Roll The Dice</div>
+            </div>
+            <div class="go" id="cricket">
+              <img src="imgs\WhatsApp-Image-2021-03-25-at-5.37.10-AM.jpeg" id="wall" />
+              <div id="pen">Hand Cricket</div>
+            </div>
+          </div>
+          <!--DIV 2-->
+          <div class="play row" id="show2">
+            <div class="go" id="guessNumber">
+              <img src="imgs\FGEF6F0K1NVATVK.jpg" id="wall" />
+              <div id="pen">Guess The Number</div>
+            </div>
+            <div class="go" id="sumo">
+              <img src="imgs\oJBRUc.png" id="wall" />
+              <div id="pen">Sumo</div>
+            </div>
+            <div class="go" id="tictac">
+              <img src="imgs\tic-tac-toe-winning-vector-639732.jpg" id="wall" />
+              <div id="pen">Tic Tac Toe</div>
+            </div>
+          </div>
+          <!--DIV 3-->
+          <div class="play row" id="show3">
+            <div class="go" id="keybreak">
+              <img src="imgs/kids garden.jpg" id="wall" />
+              <div id="pen">Kids Garden</div>
+            </div>
+            <div class="go" id="ScrambleWords">
+              <img src="imgs/scramble-words.jpg" id="wall" />
+              <div id="pen">Scrambled Words</div>
+            </div>
+            <div class="go" id="story">
+              <img src="imgs/storyboard.png" id="wall" />
+              <div id="pen">Story Board</div>
+            </div>
+          </div>
+          <script></script>
+        </div>
+      </div>
+      <!--Genre Tab-->
+      <div class="cont" id="saved">
+        <div id="gen" class="col">
+          <div id="genHead">Genres</div>
+          <div id="genres" class="col">
+            <div class="row">
+              <img src="imgs\2.png" class="genImg" id="olive1">
+              <img src="imgs\3.png" class="genImg" id="olive2">
+              <img src="imgs\4.png" class="genImg" id="olive3">
+              <img src="imgs\1.png" class="genImg1" id="olive4">
+            </div>
+            <div class="genGames">
+              <h1 class="genTitle">Games</h1>
+              <!--Kids Games-->
+              <div class="play row" id="KidsG">
+                <div class="go" id="dino" onclick="showKIDSGARDEN()">
+                  <img src="imgs\kids garden.jpg" id="wall" />
+                  <div id="pen">Kids Garden</div>
+                </div>
+                <div class="go" id="dice" onclick="showQuiz()">
+                  <img src="imgs\Kids-Quiz.jpg" id="wall" />
+                  <div id="pen">Kids Quiz</div>
+                </div>
+                <div class="go" id="cricket" onclick="showSTORY()">
+                  <img src="imgs\storyboard.png" id="wall" />
+                  <div id="pen">Story Board</div>
+                </div>
+              </div>
+              <div class="play row" id="SingleP">
+                <div class="go" id="dino" onclick="showDino()">
+                  <img src="imgs\41def14aa0d96d14f8f70608394fa6aa_large.0.jpeg" id="wall" />
+                  <div id="pen">Dino</div>
+                </div>
+
+                <div class="go" id="dice" onclick="showCricket()">
+                  <img src="imgs\WhatsApp-Image-2021-03-25-at-5.37.10-AM.jpeg" id="wall" />
+                  <div id="pen">Hand Cricket</div>
+                </div>
+                <div class="go" id="cricket" onclick="showStack()">
+                  <img src="imgs\512x512bb.jpg" id="wall" />
+                  <div id="pen">Stack a Building</div>
+                </div>
+              </div>
+              <div class="play row" id="MindG">
+                <div class="go" id="dino" onclick="showGTN()">
+                  <img src="imgs\FGEF6F0K1NVATVK.jpg" id="wall" />
+                  <div id="pen">Guess The Number</div>
+                </div>
+                <div class="go" id="dino" onclick="showTacTic()">
+                  <img src="imgs\tic-tac-toe-winning-vector-639732.jpg" id="wall" />
+                  <div id="pen">Tic Tac Toe</div>
+                </div>
+                <div class="go" id="dice" onclick="showScrambled()">
+                  <img src="imgs\scramble-words.jpg" id="wall" />
+                  <div id="pen">Scrambled Words</div>
+                </div>
+              </div>
+              <div class="play row" id="MultiP">
+                <div class="go" id="dino" onclick="showSumo()">
+                  <img src="imgs\oJBRUc.png" id="wall" />
+                  <div id="pen">Sumo</div>
+                </div>
+                <div class="go" id="dice" onclick="showDice()">
+                  <img src="imgs\ROLL-THE-DICE.jpg" id="wall" />
+                  <div id="pen">Roll The Dice</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Profile Tab-->
+      <div class="cont row" id="profile">
+        <!--Profile Tab-->
+        <div id="forest">
+          <div class="profPg">
+            <p class="profHead">Profile</p>
+            <div class="file row">
+              <img src="avatar\batman_hero_avatar_comics-512.webp" id="profImg" />
+              <table class="profTable">
+                <tr>
+                  <td id="loggedName" class="profCont">Name</td>
+                </tr>
+                <tr>
+                  <td id="loggedUserName" class="profCont">Username</td>
+                </tr>
+                <tr>
+                  <td id="loggedEmail" class="profCont">Email</td>
+                </tr>
+                <tr>
+                  <td>
+                    <button id="LoggedButton" onclick="logout()">
+                      Log Out
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <script src="loginandRegister.js"></script>
+        <div id="welcome" class="row">
+          <script src="loginandRegister.js"></script>
+          <div class="LogBg">
+            <img src="imgs\ca40d78523d1ad2037fa06d5ab6c8ba41.gif" id="wallpaper" />
+          </div>
+          <div class="form">
+            <!--Login Tab-->
+            <div class="LoginPage" id="reg">
+              <p id="Login">LogIn to Gaming Realm</p>
+              <p id="LogQ">
+                Welcome Back! Please Login to your account to continue.
+              </p>
+              <hr class="hr-text" data-content="OR" />
+              <table class="LogTable" cellspacing="1px">
+                <br />
+                <tr>
+                  <td>
+                    <input type="text" id="userlog" class="box" maxlength="30" placeholder="Username" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="password" id="userpass" class="box" placeholder="Enter Password" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button style="width: 100%" id="login-btn" onclick="login()">
+                      Login
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="link">
+                    Don't have Account?
+                    <a id="reg1">Register</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--Registration Tab-->
+            <div class="RegPage" id="reg">
+              <p id="Login">Sign Up</p>
+              <p id="LogQ">
+                Welcome to Gaming Realm! Many new games waiting to be played.
+              </p>
+              <hr class="hr-text" data-content="OR" />
+              <table class="LogTable" cellspacing="1px">
+                <br />
+                <tr>
+                  <td>
+                    <input type="text" id="regName" class="box" maxlength="30" placeholder="Name" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" id="regUsername" class="box" maxlength="30" placeholder="Username" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="email" id="regMail" class="box" placeholder="E-mail" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="password" id="regPass" class="box" maxlength="25" placeholder="Enter Password" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="password" id="regConfrmPass" class="box" maxlength="25"
+                      placeholder="Re-enter Password" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button style="width: 100%" onclick="register()" id="login-btn">
+                      Sign-Up
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="link">
+                    Already have an Account?
+                    <a id="log1">Login</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--Setting Services-->
+      <div class="cont" id="setting">
+        <script src="themes.js"></script>
+        <div class="set">
+          <div class="settingMain row">
+            <div class="setTitles">
+              <div class="settHead">Settings</div>
+              <button class="setButton row" id="sett1">
+                <img src="imgs\Theme.png" class="setImg">
+                <div class="setName">Themes</div>
+              </button>
+              <button class="setButton row" id="sett2">
+                <img src="imgs\Font.png" class="setImg">
+                <div class="setName">Font</div>
+              </button>
+              <button class="setButton row" id="sett3">
+                <img src="imgs/Untitled design (1).png" class="setImg">
+                <div class="setName">About</div>
+              </button>
+              <button class="setButton row" id="sett" onclick="window.open('Team 4 (Group 24).pdf')">
+                <div class="setName">Template</div>
+              </button>
+            </div>
+            <div class="setWindow">
+              <!--Themes-->
+              <div id="Themes" class="col">
+                <div class="row">
+                  <div class="col rwd" onclick="theme1()">
+                    <img src="imgs\UI.png" class="themeSet" id="theme1">
+                    <div class="themeName">Ultra Violet</div>
+                  </div>
+                  <div class="col rwd" onclick="theme2()">
+                    <img src="imgs\Theme-1.png" class="themeSet" id="theme2">
+                    <div class="themeName">Just Black</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col rwd" onclick="theme3()">
+                    <img src="imgs\Theme-2.png" class="themeSet" id="theme3">
+                    <div class="themeName">Green Gables</div>
+                  </div>
+                  <div class="col rwd" onclick="theme4()">
+                    <img src="imgs\Theme-3.png" class="themeSet" id="theme4">
+                    <div class="themeName">Oceanic</div>
+                  </div>
+                </div>
+              </div>
+              <!--Fonts Tab-->
+              <div id="Fonts" class="col">
+                <div class="row">
+                  <div class="col">
+                    <div class="fontSet rwd" id="font1" onclick="font1()">
+                      <h2 class="spell1">Hi Guest</h2>
+                      <p class="spell1">Welcome Back, many games waiting to be played.</p>
+                    </div>
+                    <div class="themeName">Courier New</div>
+                  </div>
+                  <div class="col ">
+                    <div class="fontSet rwd" id="font2" onclick="font2()">
+                      <h2 class="spell2">Hi Guest</h2>
+                      <p class="spell2">Welcome Back, many games waiting to be played.</p>
+                    </div>
+                    <div class="themeName">Book Antiqua</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col ">
+                    <div class="fontSet rwd" id="font3" onclick="font3()">
+                      <h2 class="spell3">Hi Guest</h2>
+                      <p class="spell3">Welcome Back, many games waiting to be played.</p>
+                    </div>
+                    <div class="themeName">News Reader</div>
+                  </div>
+                  <div class="col ">
+                    <div class="fontSet rwd" id="font4" onclick="font4()">
+                      <h2 class="spell4">Hi Guest</h2>
+                      <p class="spell4">Welcome Back, many games waiting to be played.</p>
+                    </div>
+                    <div class="themeName">Roboto Mono</div>
+                  </div>
+                </div>
+              </div>
+              <!--About Tab-->
+              <div id="aboutDev" style="margin-left: 10px;" class="col">
+                <div class="row">
+                  <div class="aboutInfo col">
+                    <div class="row">
+                      <img class="aboutImg" src="About\WhatsApp Image 2021-05-15 at 1.19.31 PM.jpeg">
+                      <div class="abtLink row">
+                        <a href="https://github.com/1PiyushKumar">
+                          <img src="About\github.png" class="link">
+                        </a>
+                        <a href="https://www.linkedin.com/in/1piyushkumar/">
+                          <img src="About\linkedin.png" class="link1">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="abtDet">
+                      Piyush Kumar
+                      <div style="font-size:15px;">Web Developer</div>
+                      <p id="mail1" href="javascript: void(0)"
+                        onclick="location.href='mailto:piyush1297@chitkara.edu.in';">piyush1297@chitkara.edu.in</p>
+                    </div>
+                  </div>
+                  <div class="aboutInfo col">
+                    <div class="row">
+                      <img class="aboutImg" src="About\photoo.jpeg">
+                      <div class="abtLink row">
+                        <a href="https://github.com/samridhi-116">
+                          <img src="About\github.png" class="link">
+                        </a>
+                        <a href="https://www.linkedin.com/in/samridhi-goyal-85b97b1b9/">
+                          <img src="About\linkedin.png" class="link1">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="abtDet">
+                      Samridhi Goyal
+                      <div style="font-size:15px;">Web Developer</div>
+                      <p id="mail1" href="javascript: void(0)"
+                        onclick="location.href='mailto:samridhi1311@chitkara.edu.in';">samridhi1311@chitkara.edu.in</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="aboutInfo col">
+                    <div class="row">
+                      <img class="aboutImg" src="About\WhatsApp Image 2021-05-15 at 1.47.49 PM.jpeg">
+                      <div class="abtLink row">
+                        <a href="https://github.com/NischayAgrawal">
+                          <img src="About\github.png" class="link">
+                        </a>
+                        <a href="https://www.linkedin.com/in/nischay-agrawal-6b5b071b6">
+                          <img src="About\linkedin.png" class="link1">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="abtDet">
+                      Nischay Agrawal
+                      <div style="font-size:15px;">Web Developer</div>
+                      <p id="mail1" href="javascript: void(0)"
+                        onclick="location.href='mailto:nischay1295@chitkara.edu.in';">nischay1295@chitkara.edu.in</p>
+                    </div>
+                  </div>
+                  <div class="aboutInfo col">
+                    <div class="row">
+                      <img class="aboutImg" src="About\WhatsApp Image 2021-05-15 at 1.30.45 PM.jpeg">
+                      <div class="abtLink row">
+                        <a href="https://github.com/saksham991">
+                          <img src="About\github.png" class="link">
+                        </a>
+                        <a href="www.linkedin.com/in/saksham-singhal">
+                          <img src="About\linkedin.png" class="link1">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="abtDet">
+                      Saksham Singhal
+                      <div style="font-size:15px;">Web Developer</div>
+                      <p id="mail1" href="javascript: void(0)"
+                        onclick="location.href='mailto:saksham1310@chitkara.edu.in';">
+                        saksham1310@chitkara.edu.in</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Chat Services-->
+      <div class="cont" id="chatbot">
+        <div id="chatscreen" class="col border">
+          <div id="chattopic" class="row border"></div>
+          <div id="chatwindow" class="col scroll border">
+            <H1>Chat Bot</H1>
+            <div class="bot">Chat services are being initiated</div>
+          </div>
+          <div id="chatinput" class="row border">
+            <input type="text" id="senttext" class="inner" placeholder="Chat Disabled" disabled />
+          </div>
+          <script src="chat.js"></script>
+        </div>
+      </div>
+    </div>
+    <!--Div3 (information panel)-->
+    <div class="info">
+      <!--Game Information always on display-->
+      <div class="gameInfo" id="about">
+        <img src="imgs/UI.png" id="infoImg" />
+        <div id="poster">Retro Hub</div>
+        <div id="head">About The Hub</div>
+        <div id="HowToPlay">
+          The project contains many 2-D games to be played for fun. You can
+          click on any game you want to play and in the same panal you will
+          get to know about all the rules and video related to it. You need to
+          login for more updates about the upcoming games nd to access the
+          same. In case of any query, you are provided with a chat system on
+          the extreme left panel.
+        </div>
+        <video height="205" width="330" controls id="vid">
+          <source src="Video/GamingRealm.webm" type="video/mp4" />
+        </video>
+      </div>
+      <!--Tic Tac Toe -->
+      <div class="gameInfo" id="tic1">
+        <img src="imgs\tic-tac-toe-winning-vector-639732.jpg" id="infoImg" />
+        <div id="poster">Tic Tac Toe</div>
+        <div id="head">How TO Play?</div>
+        <div id="HowToPlay">
+          The game is played on a grid that's 3 squares by 3 squares. You are
+          X, and the computer in is O. Players take turns putting their marks
+          in empty squares. The first player to get 3 of her marks in a row
+          (up, down, across, or diagonally) is the winner.
+        </div>
+        <button id="tacticbtn" class="infoBtn">Play</button>
+        <video height="205" width="330" controls id="vid">
+          <source src="Video/TicTacToe.webm" type="video/mp4" />
+        </video>
+      </div>
+      <!--Dino Run-->
+      <div class="gameInfo" id="dino1">
+        <img src="imgs\41def14aa0d96d14f8f70608394fa6aa_large.0.jpeg" id="infoImg" />
+        <div id="poster">Dino Run</div>
+        <div id="head">How to Play?</div>
+        <div id="HowToPlay">
+          Simply press the space bar (or up arrow) and the dino will start
+          running. Press the up arrow to jump over the obstacles (like cacti)
+          in your path. The longer you hold the up arrow, the higher dino will
+          jump. If you need to duck under something, press the down arrow.
+        </div>
+        <button id="dinobtn" class="infoBtn">Play</button>
+        <video height="205" width="330" controls id="vid">
+          <source src="Video\DinoRun.webm" type="video/mp4" />
+        </video>
+      </div>
+      <!--Roll The Dice-->
+      <div class="gameInfo" id="dice1">
+        <img src="imgs\ROLL-THE-DICE.jpg" id="infoImg" />
+        <div id="poster">Roll The Dice</div>
+        <div id="head">How to Play?</div>
+        <div id="HowToPlay">
+          The player has to roll the dice and the numbers appearing on each
+          roll will be added as it's score and if in case 1 appears, you will
+          loose that score, but you can save your score after every roll, and
+          in both cases the turn is passed on to second player.
+        </div>
+        <button id="rtdbtn" class="infoBtn">Play</button>
+        <video height="205" width="330" controls id="vid">
+          <source src="Video\Roll A Dice.webm" type="video/mp4" />
+        </video>
+      </div>
+      <!--Hand Cricket-->
+      <div class="gameInfo" id="cricket1">
+        <img src="imgs\WhatsApp-Image-2021-03-25-at-5.37.10-AM.jpeg" id="infoImg" />
+        <div id="poster">Hand Cricket</div>
+        <div id="head">How to Play?</div>
+        <div id="HowToPlay">
+          First of all you decide to bat or bowl first. Then to score Runs,
+          click on the Runs you wish to score and the Device will select a
+          random number. Show of same hands results in a wicket otherwise will
+          be added as a score. Each side has 5 wickets.
+        </div>
+        <button id="cricketbtn" class="infoBtn">Play</button>
+        <video height="205" width="330" controls id="vid">
+          <source src="Video/Hand Cricket.webm" type="video/mp4" />
+        </video>
+      </div>
+      <!--Guess the number-->
+      <div class="gameInfo" id="guess1">
+        <img src="imgs\FGEF6F0K1NVATVK.jpg" id="infoImg" />
+        <div id="poster">Guess The Number</div>
+        <div id="head">How to Play?</div>
+        <div id="HowToPlay">
+          The device selects a number between 1-20 and the player has to guess
+          it. With every guess the device will give uh the hints, if you are
+          close to the number or not. With every wrong guess your score
+          decreases. Follow the hints and Guess the Number.
+        </div>
+        <button id="Gtnbtn" class="infoBtn">Play</button>
+        <video height="205" width="330" controls id="vid">
+          <source src="Video\Guess My Number.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <!--sumo-->
+      <div class="gameInfo" id="sumo1">
+        <img src="imgs\oJBRUc.png" id="infoImg" />
+        <div id="poster">Sumo</div>
+        <div id="head">How to Play?</div>
+        <div id="HowToPlay">
+          It is a Two player game in which both the players have to press the
+          assigned keys (Player1 - S and Player2 - L) continuously. Player
+          movement is controlled by the number of key press. Player who throws
+          the opponant out of the ring wins!
+        </div>
+        <button id="sumobtn" class="infoBtn">Play</button>
+        <video height="205" width="330" controls id="vid">
+          <source src="Video\sumo.webm" type="video/mp4" />
+        </video>
+      </div>
+      <!--Kids Garden-->
+      <div class="gameInfo" id="keyboard1">
+        <img src="imgs/kids garden.jpg" id="infoImg" />
+        <div id="poster">Kids Garden</div>
+        <div id="head">How to Play?</div>
+        <div id="HowToPlay">
+          One Can use this Game to teach their kids and learn at the same time using different modes in the Game like
+          alphabets numbers colours and animals. Selet the button and it spells it out. Making it one of the most
+          perfect ways for kids to take their first step in educaton
+        </div>
+        <button id="kbbtn" class="infoBtn">Play</button>
+        <video height="205" width="330" controls id="vid">
+          <source src="Video\Kids Garden.webm" type="video/mp4" />
+        </video>
+      </div>
+      <!--Word Scramble-->
+      <div class="gameInfo" id="hangman1">
+        <img src="imgs/scramble-words.jpg" id="infoImg" />
+        <div id="poster">Scrambled Words</div>
+        <div id="head">How to Play?</div>
+        <div id="HowToPlay">
+          In this game you have to write the correct word from Scrambed words and then write it accordingly to find the
+          right Answer from a set of jumbled words
+        </div>
+        <button id="wsbtn" id="WordBtn" class="infoBtn">Play</button>
+        <video height="205" width="330" controls id="vid">
+          <source src="Video\Scrambled Words.webm" type="video/mp4" />
+        </video>
+      </div>
+      <!--Storyboard-->
+      <div class="gameInfo" id="story1">
+        <img src="imgs/storyboard.png" id="infoImg" />
+        <div id="poster">Story Board</div>
+        <div id="head">How to Play?</div>
+        <div id="HowToPlay">
+          The Person using this can make his/her own decisions as a protagonist and continue in the story to find out
+          what happens in the end. You have 2 stories to choose from and enjoy different stories
+        </div>
+        <button id="storybtn" class="infoBtn">Play</button>
+        <video height="205" width="330" controls id="vid">
+          <source src="Video\Story Board.webm" type="video/mp4" />
+        </video>
+      </div>
+      <!--Kids Quiz-->
+      <div class="gameInfo" id="kidsquiz1">
+        <img src="imgs\Kids-Quiz.jpg" id="infoImg" />
+        <div id="poster">Kids Quiz</div>
+        <div id="head">How to Play?</div>
+        <div id="HowToPlay">
+          It is an educational game consisting of 10 general knowledge based quiz questions. The person needs to attempt
+          the questions and will be graded according to all the right answers. The questions can be skipped and the quiz
+          can be re-attemped.
+        </div>
+        <button id="quizbtn" class="infoBtn">Play</button>
+        <video height="205" width="330" controls id="vid">
+          <source src="Video/Kids Quiz.webm" type="video/mp4" />
+        </video>
+      </div>
+      <!--Stack a Building-->
+      <div class="gameInfo" id="stack1">
+        <img src="imgs\512x512bb.jpg" id="infoImg" />
+        <div id="poster">Stack a Building</div>
+        <div id="head">How to Play?</div>
+        <div id="HowToPlay">
+          This is a single player game, in which the player has to build a building by arranging the blocks in correct
+          order. When the blocks slide over another we have to click on the screen to drop the block. We need to repeat
+          this until a building is made.
+        </div>
+        <button id="stackbtn" class="infoBtn">Play</button>
+        <video height="205" width="330" controls id="vid">
+          <source src="Video/Stack A Building.webm" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </div>
+  <div id="gameWindow" class="col">
+    <div id="tbfr" class="row">
+      <button id="closeWin">X</button>
+    </div>
+    <iframe src="" frameborder="0" id="gameFrame"> </iframe>
+  </div>
+  <audio id="music" loop>
+    <source src="Audio/[Official] Celeste Original Soundtrack - 02 - First Steps.mp3">
+  </audio>
+  <script>
+    window.addEventListener('click', function () {
+      var audio = document.getElementById("music");
+      audio.play();
+      $('#music').prop('volume', 0.10);
+    });
+  </script>
+  <script src="HistorynSaved.js"></script>
+  <script src="Project.js"></script>
+</body>
+
+</html>

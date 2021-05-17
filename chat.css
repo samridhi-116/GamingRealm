@@ -1,0 +1,97 @@
+.border {
+  border: inherit;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+body {
+  overflow: hidden;
+}
+.chatbutton {
+  width: 8vw;
+  height: 6vh;
+  background-color: white;
+  border-radius: 25px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+#chatscreen {
+  height: 84vh;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(12, 36, 71),
+    rgb(34, 92, 128)
+  );
+  border-radius: 40px;
+}
+#chatwindow {
+  margin-top: 5%;
+  padding: 2%;
+  overflow-x: hidden;
+  min-height: 85%;
+  max-height: 85%;
+  width: 100%;
+  overflow-y: auto;
+  color: rgb(255, 255, 255);
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: skyblue;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgb(102, 100, 100);
+}
+.bot {
+  padding-left: 2%;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
+  background-color: rgb(62, 148, 170);
+  border-radius: 20px;
+  color: white;
+  border: inherit;
+  margin: 5px;
+}
+.human {
+  background-color: rgb(17, 102, 128);
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
+  padding-right: 2%;
+  border: inherit;
+  margin: 5px;
+  text-align: right;
+}
+.inner {
+  width: 52vw;
+  font-size: 25px;
+  margin-left: 3vw;
+  margin-right: 1vw;
+  margin-bottom: 1vw;
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff00;
+  border-bottom: 3px solid rgb(54, 51, 51);
+  outline: none;
+}
+#send {
+  width: 10vh;
+}
