@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(erick-bruno-ingame2.jpg);
+            height: 97.5vh;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #main {
+            margin-bottom: 2%;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #room {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            border: 10px solid whitesmoke;
+
+        }
+
+        #menu {
+            height: 300px;
+            width: 300px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #menu>button {
+            background-color: rgb(219, 3, 3);
+            border: none;
+            font-size: 35px;
+            color: white;
+            width: 120px;
+            height: 80px;
+            margin: 1vh;
+        }
+
+        #menu>button:hover {
+            background-color: rgb(219, 3, 3);
+            box-shadow: 0 0 10px black;
+        }
+
+        #imge {
+            margin-left: 90px;
+            height: 60px;
+            width: 120px;
+            z-index: 2;
+            position: absolute;
+        }
+
+        #declare {
+            color: whitesmoke;
+            font-size: 35px;
+
+            background-color: inherit;
+            z-index: 0;
+            margin: auto;
+            position: relative;
+        }
+
+        .center {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cols {
+            display: flex;
+            flex-direction: column;
+            z-index: 0;
+            margin: auto;
+            position: relative;
+        }
+
+        #playrselect {
+            height: 300px;
+            width: 300px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            font-size: 25px;
+        }
+
+
+        div>input {
+            background-color: rgb(219, 3, 3);
+            border: none;
+            font-size: 30px;
+            color: black;
+            width: 200px;
+            height: 35px;
+        }
+
+        div>input:hover {
+            background-color: rgb(219, 3, 3);
+            box-shadow: 0 0 10px black;
+        }
+
+        #playrselect>h2 {
+            font-size: 40px;
+            margin-bottom: 2vh;
+        }
+
+        #playrselect>button {
+            background-color: rgb(219, 3, 3);
+            border: none;
+            font-size: 35px;
+            color: white;
+            width: 120px;
+            height: 40px;
+            margin-top: 10px;
+            margin: auto;
+        }
+
+        #playrselect>button:hover {
+            background-color: rgb(219, 3, 3);
+            box-shadow: 0 0 10px black;
+        }
+
+        #rulez>button {
+            background-color: rgb(219, 3, 3);
+            border: none;
+            font-size: 35px;
+            color: white;
+            width: 120px;
+            height: 40px;
+            margin-top: 10px;
+            margin: auto;
+        }
+
+        #rulez {
+            font-size: 25px;
+            color: white;
+        }
+
+        #rulez>button:hover {
+            background-color: rgb(219, 3, 3);
+            box-shadow: 0 0 10px black;
+        }
+
+        #restart {
+            background-color: rgb(219, 3, 3);
+            width: 120px;
+            font-size: 25px;
+            color: white;
+            height: 40px;
+        }
+
+        #restart:hover {
+            background-color: rgb(219, 3, 3);
+            box-shadow: 0 0 10px black;
+        }
+    </style>
+
+</head>
+
+<body class="center">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="KeyboardLogic.js">
+
+    </script>
+    <div id="menu" class="center">
+        <h1>Menu</h1>
+        <button id="start">Start</button>
+        <button id="rules">Rules</button>
+    </div>
+    <div id="rulez" class="center">
+        <ol>
+            <li>Player 1 uses The S button to play the game</li>
+            <li>Player 2 uses The L button to play the game</li>
+            <li>Restart Button brings you to main menu</li>
+        </ol>
+        <button id="back">Back</button>
+    </div>
+    <div id="playrselect">
+        <h2>Player Names</h2>
+        <div>
+            Player 1 : <input id="l1" type="text">
+        </div>
+        <div>
+            Player 2 : <input id="l2" type="text">
+        </div>
+        <button id="play">Play</button>
+    </div>
+    <div id="main" class="center">
+        <div>
+            <div id="P1">
+                Player 1
+            </div>
+            <div>Score</div>
+            <div id="a">15</div>
+        </div>
+        <div id="room">
+            <div class="cols center">
+                <h2 id="declare">||</h2>
+                <button id="restart">Restart</button>
+            </div>
+            <img id="imge" src="erick-bruno-sumos-colidindo.gif" />
+        </div>
+        <div>
+            <div id="P2">
+                Player 2
+            </div>
+            <div>
+                Score
+            </div>
+            <div id="b">15</div>
+        </div>
+    </div>
+</body>
+
+</html>

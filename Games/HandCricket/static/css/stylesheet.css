@@ -1,0 +1,75 @@
+@import "https://fonts.googleapis.com/css?family=Noto+Sans+JP";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  height: 100vh;
+  /* background: url("../imgs/stadium.jpg"), radial-gradient(#444, #111); */
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.toss {
+  text-align: center;
+}
+
+.headlines {
+  display: flex block;
+  font-size: 30px;
+}
+.headlines > * {
+  padding: 20px;
+}
+#OddEven {
+  background-image: url("imgs/cricket-sports-concept-toss-illustration-coin-projection-stylish-text-game-50406653.jpg");
+  background-repeat: no-repeat;
+  font-size: 50px;
+}
+.but {
+  width: 200px;
+  height: 80px;
+  font-size: 30px;
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+}
+.but-odd {
+  color: white;
+  background-color: rgb(123, 123, 123);
+}
+.but-even {
+  color: black;
+  background-color: white;
+}
+.but1 {
+  width: 200px;
+  height: 100px;
+  font-size: 30px;
+}
+#ask_user_bat {
+  font-size: 40px;
+  text-align: center;
+}
+#inp {
+  padding: 20px;
+  text-align: center;
+  border-style: groove;
+  font-size: 40px;
+}
+.but2 {
+  width: 100px;
+  height: 50px;
+}

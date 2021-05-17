@@ -1,0 +1,2 @@
+This game is made using html css js and jquery
+This is the third game in the project

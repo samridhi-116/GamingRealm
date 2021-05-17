@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+body > div {
+  width: 350px;
+  font-size: 40px;
+  height: 50vh;
+  background-color: rgb(105, 158, 184);
+  border-radius: 25px;
+  margin-right: 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+}
+
+.player {
+}
