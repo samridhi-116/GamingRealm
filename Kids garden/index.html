@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    .col {}
+
+    h1 {
+        color: white;
+        text-shadow: 0 0 10px Black;
+        font-size: 100px;
+    }
+
+    h2 {
+        color: white;
+        text-shadow: 0 0 10px Black;
+        font-size: 50px;
+    }
+
+    button {
+        outline: none;
+        color: red;
+        font-size: 50px;
+        background-color: transparent;
+        font-family: 'Fredoka One', cursive;
+    }
+
+    #mode>button {
+        width: 400px;
+        margin: 20px;
+    }
+
+    #mode>button:hover {
+        box-shadow: 0 0 10px black;
+    }
+
+    body {
+        align-content: center;
+        text-align: center;
+    }
+
+    #main {
+        padding-top: 50px;
+        height: auto;
+        margin: auto;
+    }
+
+    #mode {
+        padding-top: 50px;
+        height: auto;
+        margin: auto;
+    }
+
+    #main>button {
+        font-size: 100px;
+        height: 200px;
+        width: 300px;
+        box-shadow: 0 0 10px black;
+    }
+
+    #playarea {
+        margin-top: 2%;
+    }
+
+    .plbtn {
+        width: 80px;
+        height: 70px;
+        margin: 10px;
+    }
+
+    .plbtn:hover {
+        box-shadow: 0 0 5px black;
+    }
+
+    #colordiv>.plbtn {
+        width: 150px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    #modeback {
+        color: black;
+    }
+
+    #modeback:hover {
+        box-shadow: 0 0 10px black;
+    }
+
+    .plim {
+        width: 300px;
+        height: 300px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .plim>.plim {
+        width: 290px;
+        height: 290px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    #animaldiv {
+        margin-top: 0px;
+    }
+</style>
+
+<body background="Image/1974182.jpg">
+    <Div>
+        <h1>Kids Garden</h1>
+        <!--Play Div (Main Menu)-->
+        <div id="main">
+
+            <button id="play">Play</button>
+        </div>
+        <!--Choose a Mode-->
+        <div id="mode">
+            <h2>Choose a Mode</h2>
+            <button id="let">Letter Mode</button>
+            <button id="num">Number Mode</button>
+            <br>
+            <button id="Color">Color Mode</button>
+            <button id="Animal">Animal Mode</button>
+            <br>
+            <button id="Back">Back</button>
+        </div>
+        <!--Play Area-->
+        <div id="playarea">
+            <!--Letter Mode-->
+            <div id="letterdiv">
+                <div>
+                    <button id="clia" class="plbtn">A</button>
+                    <button id="clib" class="plbtn">B</button>
+                    <button id="clic" class="plbtn">C</button>
+                    <button id="clid" class="plbtn">D</button>
+                    <button id="clie" class="plbtn">E</button>
+                    <button id="clif" class="plbtn">F</button>
+                    <button id="clig" class="plbtn">G</button>
+                    <button id="clih" class="plbtn">H</button>
+                    <button id="clii" class="plbtn">I</button>
+                </div>
+                <div>
+                    <button id="clij" class="plbtn">J</button>
+                    <button id="clik" class="plbtn">K</button>
+                    <button id="clil" class="plbtn">L</button>
+                    <button id="clim" class="plbtn">M</button>
+                    <button id="clin" class="plbtn">N</button>
+                    <button id="clio" class="plbtn">O</button>
+                    <button id="clip" class="plbtn">P</button>
+                    <button id="cliq" class="plbtn">Q</button>
+                    <button id="clir" class="plbtn">R</button>
+                </div>
+                <div>
+                    <button id="clis" class="plbtn">S</button>
+                    <button id="clit" class="plbtn">T</button>
+                    <button id="cliu" class="plbtn">U</button>
+                    <button id="cliv" class="plbtn">V</button>
+                    <button id="cliw" class="plbtn">W</button>
+                    <button id="clix" class="plbtn">X</button>
+                    <button id="cliy" class="plbtn">Y</button>
+                    <button id="cliz" class="plbtn">Z</button>
+                </div>
+            </div>
+            <!--Number Mode-->
+            <div id="numberdiv">
+                <button id="cli0" class="plbtn">0</button>
+                <button id="cli1" class="plbtn">1</button>
+                <button id="cli2" class="plbtn">2</button>
+                <button id="cli3" class="plbtn">3</button>
+                <button id="cli4" class="plbtn">4</button>
+                <button id="cli5" class="plbtn">5</button>
+                <button id="cli6" class="plbtn">6</button>
+                <button id="cli7" class="plbtn">7</button>
+                <button id="cli8" class="plbtn">8</button>
+                <button id="cli9" class="plbtn">9</button>
+            </div>
+            <!--Animals Mode-->
+            <div id="animaldiv">
+                <button id="clidog" class="plim">
+                    <img src="Image/Animals/Dof.jpeg" class="plim">
+                </button>
+                <button id="clicat" class="plim">
+                    <img src="Image/Animals/Cat.jpeg" class="plim">
+                </button>
+                <button id="clicow" class="plim"><img class="plim"
+                        src="Image/Animals/cartoon-happy-cow-vector-20862513.jpg"></button>
+                <button id="cliduck" class="plim">
+                    <img class="plim" src="Image/Animals/cute-duck-cartoon_160606-179.jpg">
+                </button>
+                <br>
+                <button id="cligoat" class="plim">
+                    <img class="plim" src="Image/Animals/Goat.jpeg"></button>
+                <button id="clipony" class="plim">
+                    <img class="plim" src="Image/Animals/cute-horse-cartoon_37609-152.jpg">
+                </button>
+                <button id="clitiger" class="plim">
+                    <img class="plim" src="Image/Animals/adult-funny-tiger-260nw-469486433.jpg" alt="">
+                </button>
+                <button id="clielephant" class="plim">
+                    <img class="plim" src="Image/Animals/cute-elephant-cartoon-260nw-500476903.jpg" alt="">
+                </button>
+
+            </div>
+            <!--Colors Mode-->
+            <div id="colordiv">
+
+                <button id="clired" style="background-color: red" class="plbtn">Red</button>
+                <button id="cliblue" style="background-color: Blue" class="plbtn"></button>
+                <button id="clipink" style="background-color: pink" class="plbtn"></button>
+                <button id="cligreen" style="background-color: green" class="plbtn"></button>
+                <br>
+                <button id="cliorange" style="background-color: orange" class="plbtn"></button>
+                <button id="cliyellow" style="background-color: yellow" class="plbtn"></button>
+                <button id="cliwhite" style="background-color: White" class="plbtn"></button>
+                <button id="cliblack" style="background-color: Black" class="plbtn"></button>
+                <br>
+            </div>
+            <!--The audio Plays in here-->
+            <button id="modeback">Back to Mode</button>
+        </div>
+        <audio id="aud" src="" autoplay>
+
+        </audio>
+    </Div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="work.js"></script>
+</body>
+
+</html>
