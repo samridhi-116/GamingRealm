@@ -1,0 +1,177 @@
+body {
+    margin: 0px;
+    width: 100%;
+    background-image: url("./backg.jpg") ;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-repeat: repeat-y;
+    background-size: contain;
+    backdrop-filter: blur(100);
+    background-position: 0px -100px;
+}
+
+
+
+.game {
+    margin-top: 200px;
+    width: 600px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+#back {
+    height: 500px;
+    margin: 0px;
+    width: 100%;
+    background-image: url("./backk.png");
+    background-size: cover;
+    background-position:bottom;
+}
+
+#dino {
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+    background-image: url("./dinorun.gif");
+}
+
+@keyframes jump {
+    0% {top: 150px;}
+    10% {top: 140px;}  
+    20% {top: 120px;}  
+    30% { top: 110px;}
+    40% {top: 90px;}
+    50%{top: 80px;}
+    60% {top: 90px;}
+    70% {top: 110px;}
+    80% {top: 120px;}
+    90% {top: 140px;}
+    100% {top: 150px;}
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    position: relative;
+    top: 110px;
+    left: 600px;
+    background-image: url(./cacs.gif) ;
+    background-size: 20px 40px;
+}
+.move {
+    animation: block 1.3s infinite linear;
+}
+.move2 {
+    animation: block 1.7s infinite linear;
+}
+
+#cactus2 {
+    width: 20px;
+    height: 40px;
+    position: relative;
+    top: 70px;
+    left: 600px;
+    background-size: 20px 40px;
+    background-image: url(./cacs.gif) ;
+}
+
+@keyframes block {
+    0% {left: 580px;}
+    100% {left: -20px;}
+}
+
+#startPage{
+    top: 0px;
+    bottom: 0px;
+    background-image: url("./startrun.gif");
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    z-index: 400;
+    height: 100%;
+    background-position: bottom;
+}
+#star{
+    position: absolute;
+    left: 45%;
+    bottom: 4%;
+    height: 50px;
+    width: 135px;
+    background-image: url("./startbut.png");
+    background-size: cover;
+}
+
+#counts {
+    border: 4px solid grey;
+    font-size: 20;
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+}
+
+#backen{
+    display: none;
+    top: 0px;
+    bottom: 0px;
+    background-image: url("./backen.gif");
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    z-index: 700;
+    height: 100%;
+    background-position: bottom;
+}
+
+#beack{
+    position: absolute;
+    left: 45%;
+    bottom: 4%;
+    height: 60px;
+    width: 170px;
+    z-index: 100;
+    background-image: url("replay.png");
+    background-size: cover;
+}
+
+#result{
+    position: absolute;
+    left: 42.5%;
+    bottom: 12%;
+    height: 60px ;
+    width: 250px ;
+    z-index: 100 ;
+    background-size: cover;
+    background-image: url("./result.png");
+}
+
+#score {
+    margin-top: 10px;
+    font-size: 40px ;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 200;
+}
+
+#run {
+    height: 70px;
+    width: 100px;
+    position: absolute;
+    top: 345px;
+    left: 24.5%;
+    background-image: url("./runn.png");
+    background-size: cover;
+    z-index: 300;
+}

@@ -1,0 +1,6 @@
+function count(num){
+    setTimeout(function(){
+        console.log(num);
+        if(num > 0) count(num - 1);
+    }, 2000);
+}
